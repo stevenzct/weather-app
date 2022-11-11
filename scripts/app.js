@@ -40,9 +40,6 @@ const updateUI = (data) => {
     }
 
 };
-
-
-
 cityForm.addEventListener('submit', e => {
     //prevent default action
     e.preventDefault();
@@ -60,7 +57,6 @@ cityForm.addEventListener('submit', e => {
     // set local storage
     localStorage.setItem('city', city);
 });
-
 
 if(localStorage.getItem('city')){
     forecast.updateCity(localStorage.getItem('city'))
